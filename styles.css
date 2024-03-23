@@ -1,0 +1,160 @@
+:root {
+  --primary-blue: #4c5fd5;
+  --primary-light-blue: #dadbf1;
+  --primary-black: #000000;
+  --primary-white: #fff;
+}
+
+/* CSS Reset */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+/* NAVBAR SECTION */
+.nav-bar {
+  color: var(--primary-white);
+  background-color: var(--primary-black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  font-size: 1.2rem;
+}
+
+.nav-left {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-left > li {
+  list-style: none;
+}
+.nav-left > li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.nav-item.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 550;
+}
+
+.nav-left .nav-item img {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.nav-right {
+  display: flex;
+  gap: 20px;
+}
+.nav-right > li {
+  list-style: none;
+}
+.nav-right > li > button {
+  background-color: var(--primary-blue);
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+.nav-right > li > button:hover {
+  cursor: pointer;
+}
+.nav-right .submit-btn {
+  background-color: var(--primary-black);
+  color: var(--primary-white);
+  border: 1px solid var(--primary-white);
+  font-size: 1em;
+}
+.nav-right .signIn-btn {
+  font-size: 1em;
+  background-color: var(--primary-blue);
+  color: var(--primary-white);
+}
+.nav-right .signIn-btn:hover {
+  background-color: var(--primary-white);
+  color: var(--primary-black);
+  transition: 0.4s;
+}
+
+/* MAIN SECTION  SEARCH SECTION*/
+.search-section {
+  text-align: center;
+  padding: 100px 50px;
+  background-color: var(--primary-light-blue);
+}
+.search-section h1 {
+  font-size: 3.5em;
+  font-weight: 500;
+}
+
+.search-section form {
+  margin-top: 20px;
+}
+
+.search-section form input {
+  padding: 15px;
+  font-size: 16px;
+  box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  max-width: 90%;
+  border-radius: 8px;
+  border: none;
+  transition: transform 1s;
+}
+.search-section form input:focus {
+  outline: none;
+}
+.search-section form input:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+/* FEATURES SECTION */
+.features-grid {
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: auto;
+  column-gap: 50px;
+  row-gap: 40px;
+  margin-top: 100px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+}
+
+.feature-image {
+  width: 35%;
+}
+.feature-content {
+  width: 65%;
+}
+.feature-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-height: 100px;
+}
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.feature-content a {
+  text-decoration: none;
+  color: var(--primary-blue);
+}
+.feature-content a:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+}
