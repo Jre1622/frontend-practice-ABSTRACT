@@ -158,3 +158,16 @@
   text-decoration: underline;
   transform: scale(1.05);
 }
+
+@media screen and (max-width: 700px) {
+  .nav-bar {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .nav-bar {
+    font-size: 0.7rem;
+    padding: 0px;
+  }
+}
