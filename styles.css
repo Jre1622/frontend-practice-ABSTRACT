@@ -168,6 +168,6 @@
 @media screen and (max-width: 620px) {
   .nav-bar {
     font-size: 0.7rem;
-    padding: 0px;
+    padding: 10px 0px;
   }
 }
